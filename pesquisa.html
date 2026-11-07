@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>seletores</title>
+</head>
+<body style="background-color: purple; color: white;">
+    <h2>Seletor de Atributo</h2>
+    <p>Serve para selecionar elementos HTML com base nos seus atributos 
+        sem precisar criar clases ou IDs. Exemplo:
+    </p>
+    <p>
+        input[type="email"] {<br>
+            border: 2px solid blue;
+        }<br><br>Resultado: apenas o campo de e-mail recebe a borda azul.<hr>
+    </p>
+    <h2>Seletor Descendente</h2>
+    <p>Serve para selecionar elementos HTML que estejam 
+        dentro de outro elemento. Exemplo:
+    </p>
+    <p>
+        div p {<br>
+            color: blue;
+        }<br><br>Resultado: o texto da tag "p" que está dentro de "div" fica azul.<hr>
+    </p>
+    <h2>Seletor Filho Direto</h2>
+    <p>É utilizado para selecionar apenas os filhos diretos 
+        de outro elemento HTML. Exemplo:
+    </p>
+    <p>
+        div > p {<br>
+            color: blue;
+        }<br><br>Resultado: se as tags "p" e "section" estão dentro de "div", 
+        apenas "p" (filho direto) fica azul.<hr>
+    </p>
+    <h2>Seletor Adjacente Direto</h2>
+    <p>É utilizado para selecionar um elemento que aparece imadiatamente
+        depois de outro elemento. Exemplo:
+    </p>
+    <p>
+        elemento1 + elemento2 {<br>
+            color: blue;
+        }<br><br>Resultado: apenas "elemento2" fica azul.<hr>
+    </p>
+    <h2>Seletor de Irmãos Gerais</h2>
+    <p>É utilizado para selecionar todos os elementos que vêm 
+        depois de outro elemento desde que ambos sejam irmãos. Exemplo:
+    </p>
+    <p>
+        elemento1 ~ elemento2 {<br>
+            color: blue;
+        }<br><br>Resultado: todos os elementos do tipo "elemento2"
+         que aparecem depois do elemento1 e que compartilham o mesmo pai 
+         ficam azuis.<hr>
+    </p>
+    <h2>Seletor de Pseudoclasse</h2>
+    <p>É utilizado para, por exemplo, mudar a cor de um botão 
+        diante de determinada situação, como quando o mouse passa sobre 
+        ele. Exemplo:
+    </p>
+    <p>
+        button:hover {<br>
+            background-color: blue;
+            color: white;
+        }<hr>
+    </p>
+    <h2>Seletor de Pseudoelemento</h2>
+    <p>É utilizado para, por exemplo, mudar a cor apenas da primeira 
+        letra de um parágrafo, estilizar a primeira linha de um texto... Exemplo:
+    </p>
+    <p>
+        p::first-letter {<br>
+            color: red;
+            font-size: 30px;
+        }<br><br>Resultado: a primeira letra do parágrafo fica vermelha e 
+        maior.
+    </p>
+</body>
+</html>
