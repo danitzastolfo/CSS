@@ -1,0 +1,63 @@
+html{
+    scrollbar-color: black white;
+}
+    
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 1400px;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10; /* a posição relativa, teoricamente, tem z-index maior que 
+    a fixed, então é preciso ajustá-lo */
+}
+
+.botaozap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(24, 255, 24);
+    color: white;
+    padding: 8px;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+.container{ /* todo elemento vem estático por padrão */
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin-top: 100px;
+    position: relative; /* age de acordo com a posição inicial; anda 
+    200px a partir do local de origem */
+    left: 200px;
+    top: 200px;
+    margin-bottom: 250px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    position: absolute; /* se orienta a partir do item de posição !relativa! 
+    mais próxima */
+    left: 20px;
+    bottom: 20px;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    float: left;
+}
